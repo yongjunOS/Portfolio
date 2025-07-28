@@ -97,11 +97,77 @@ header {
   transition: 0.5s;
 }
 
-.btn-hiring .fa{
+.btn-hiring .fa {
   transform: rotateY(180deg);
   margin-right: 5px;
 }
 
-.btn-hiring:active{
+.btn-hiring:active {
   transform: scale(0);
+}
+
+/* ################### Section : awards winner ###################*/
+.awards-inner {
+  height: 100%;
+  border: 1px solid #000;
+}
+.awards-inner > div {
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.about-awards {
+  background-color: #000;
+  color: #fff;
+}
+.about-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+.victory-jump {
+  background-color: #fff;
+}
+.victory-jump img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 30px;
+}
+hr.bar {
+  width: 50px;
+  height: 4px;
+  border: none;
+  background-color: crimson;
+  /* 위아래 30px 좌우는 auto로 설정 */
+  margin: 30px auto;
+}
+.about-heading p {
+  color: #999;
+  font-size: 167x;
+  /* 16px * 1.5em */
+  line-height: 1.5em;
+}
+.about-heading a {
+}
+.view-awards {
+  color: #bbb;
+  border: 1px solid #bbb;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: 0.5;
+  display: inline-block;
+  margin: 20px;
+}
+.view-awards:hover{
+  background-color: #00fbffc9;
+  color: #fff;
+  border-color: transparent;
+
 }
