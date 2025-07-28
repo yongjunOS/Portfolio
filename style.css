@@ -105,8 +105,58 @@ header {
 .btn-hiring:active {
   transform: scale(0);
 }
+/* ################### Section : about ###################*/
+.about-inner {
+  background: url(images/line-drawing.png) no-repeat right bottom;
+  height: 100%;
+  /* 원본의 50% 크기로 축소 */
+  background-size: 60%; 
+  background-color: #0dace3;
+}
+.about-items {
+  width: 60%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 100px;
+}
+.item {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.item:hover h3 {
+  color: #000;
+}
+.item:hover img {
+  filter: invert(0);
+}
+.item img {
+  height: 120px;
+  /* width도 제한 */
+  width: 120px;
+  /* 비율 유지하며 크기 맞춤 */
+  object-fit: contain;
+  float: left;
+  margin-right: 20px;
+  filter: invert(1);
+  transition: 0.5s;
+}
+.item h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  transition: 0.5s;
+  letter-spacing: -1px;
+}
+.item span {
+}
+.item p {
+  overflow: hidden;
+  font-size: 17px;
+}
 
-/* ################### Section : awards winner ###################*/
+/* ################### Section : awards  ###################*/
 .awards-inner {
   height: 100%;
   border: 1px solid #000;
@@ -165,9 +215,8 @@ hr.bar {
   display: inline-block;
   margin: 20px;
 }
-.view-awards:hover{
+.view-awards:hover {
   background-color: #00fbffc9;
   color: #fff;
   border-color: transparent;
-
 }
