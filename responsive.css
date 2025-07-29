@@ -1,4 +1,70 @@
-/* 미디어쿼리 */
+/* PC 화면에서만 적용되는 반응형 여백 조정 */
+
+/* 큰 PC 화면 (1920px 이상) */
+/*
+@media only screen and (min-width: 1920px) {
+  .content {
+    width: calc(100% - 200px);
+    height: calc(100% - 150px);
+    left: 100px;
+    bottom: 75px;
+  }
+  
+  .gnb-inner {
+    width: calc(100% - 200px);
+  }
+  
+  .btn-hiring {
+    right: 100px;
+    bottom: 75px;
+  }
+}
+*/
+
+/* 일반 PC 화면 (1400px - 1920px) */
+/*
+@media only screen and (min-width: 1400px) and (max-width: 1919px) {
+  .content {
+    width: calc(100% - 120px);
+    height: calc(100% - 100px);
+    left: 60px;
+    bottom: 50px;
+  }
+  
+  .gnb-inner {
+    width: calc(100% - 120px);
+  }
+  
+  .btn-hiring {
+    right: 60px;
+    bottom: 50px;
+  }
+}
+*/
+
+/* 중간 PC 화면 (1050px - 1399px) */
+/*
+@media only screen and (min-width: 1050px) and (max-width: 1399px) {
+  .content {
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    left: 40px;
+    bottom: 40px;
+  }
+  
+  .gnb-inner {
+    width: calc(100% - 80px);
+  }
+  
+  .btn-hiring {
+    right: 40px;
+    bottom: 40px;
+  }
+}
+*/
+
+/* 768px 이하에서는 기존 스타일 유지 (모바일) */
+
 @media (max-width: 768px) {
   /* Entire Layout */
   .cd-section {
