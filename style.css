@@ -13,6 +13,7 @@
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -293,4 +294,110 @@ hr.bar {
   color: #fff;
   font-size: 18px;
   margin: 0;
+}
+
+/* ################### Section : Contact  ###################*/
+.contact-inner {
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #00000034;
+}
+.contact-feature {
+  /* border: 1px solid red; */
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-feature > div {
+  /* border: 1px solid #000; */
+  /* height: 400px; */
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+.contact-form {
+}
+.contact-form h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0px;
+}
+.contact-form h3 b {
+}
+.send-box {
+}
+.send-box label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0;
+  margin-top: 23.5px;
+}
+.send-box label span {
+  color: crimson;
+}
+.send-box input[type="email"],
+.send-box input[type="text"],
+.send-box textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
+  /* 아무런 기능이없어서 지움 */
+  /* outline: none; */
+  width: 100%;
+  transition: 0.5s;
+}
+.send-box input[type="email"]:hover,
+.send-box input[type="text"]:hover,
+.send-box textarea:hover {
+  border: 1px solid #08c;
+  box-shadow: 0 0 5px #0088cc;
+}
+.send-box input[type="email"]:focus,
+.send-box input[type="text"]:focus,
+.send-box textarea:focus {
+  /* background-color: #efefef; */
+}
+/* input 요소들은 inline-block이기때문에 크기 설정가능하다 */
+/* html5부터 button태그가 만들어졌다. */
+.send-box button {
+  background-color: #08c;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+.send-box button:hover {
+  background-color: #000;
+}
+.contact-info {
+}
+
+.contact-info h4 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+}
+
+.contact-info h4 b {
+}
+.contact-info ul {
+}
+.contact-info ul li {
+  line-height: 2em;
+}
+
+/* ul에서 li선택할때 클래스이름으로 선택하는 대신 last-child로 선택해서 간략화 */
+.contact-info ul li:last-child {
+  color: #08c;
+}
+
+.contact-info p {
+  line-height: 1.5em;
 }
