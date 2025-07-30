@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="js/velocity/velocity.css" />
     <!-- Smooth Scrolling -->
     <script src="js/jquery.scrollTo.min.js"></script>
+    <!-- Slick.js -->
+    <script src="js/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="js/slick/slick.css" />
     <!-- Custom JS & CSS -->
     <script src="custom.js"></script>
     <!-- 순서중요 pc버전의 css가 먼저오고 그 다음 모바일 버전의 css가 온다 -->
@@ -23,7 +27,7 @@
 
   <body data-hijacking="on" data-animation="scaleDown">
     <div class="container">
-      <section class="cd-section visible" id="home">
+      <section class="cd-section" id="home">
         <div>
           <div class="content">
             <img src="images/temp-section-01.jpg" />
@@ -78,10 +82,129 @@
         </div>
       </section>
 
-      <section class="cd-section" id="project">
+      <section class="cd-section visible" id="project">
         <div>
           <div class="content">
-            <img src="images/temp-section-03.jpg" />
+            <div class="project-inner">
+              <input type="radio" name="tabmenu" id="tab1" checked />
+              <input type="radio" name="tabmenu" id="tab2" />
+              <input type="radio" name="tabmenu" id="tab3" />
+              <div class="tabs">
+                <div class="tab">
+                  <div class="project-info" data-text="01">
+                    <h3>Project : Glass Wall Architecture</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Cupiditate quo voluptate, officia maxime, necessitatibus
+                      deleniti adipisci, facere accusantium aut nemo, molestiae
+                      rem vitae. Quidem enim tempore sed iste quos
+                      exercitationem quod voluptatibus aliquam aperiam
+                      assumenda, necessitatibus consequuntur doloribus, culpa,
+                      possimus!
+                    </p>
+                    <ul>
+                      <li><b>Area</b> : 1670 m2</li>
+                      <li><b>Completed Date</b> : September 2018</li>
+                      <li><b>Architect</b> : Andrew Yu</li>
+                    </ul>
+                    <div class="detail">
+                      <div><span>225</span> WORKING DAY</div>
+                      <div><span>320</span> MEMBERS</div>
+                      <div><span>3M</span> BUDGET</div>
+                    </div>
+                    <a href="" class="view-project"
+                      >VIEW PROJECT<i
+                        class="fa fa-arrow-right"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="project-photo">
+                    <img src="images/project-main-01-01.jpg" alt="" />
+                    <img src="images/project-main-01-02.jpg" alt="" />
+                    <img src="images/project-main-01-03.jpg" alt="" />
+                    <img src="images/project-main-01-04.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="tab">
+                  <div class="project-info" data-text="02">
+                    <h3>Project : Hallway of Architecture</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Cupiditate quo voluptate, officia maxime, necessitatibus
+                      deleniti adipisci, facere accusantium aut nemo, molestiae
+                      rem vitae. Quidem enim tempore sed iste quos
+                      exercitationem quod voluptatibus aliquam aperiam
+                      assumenda, necessitatibus consequuntur doloribus, culpa,
+                      possimus!
+                    </p>
+                    <ul>
+                      <li><b>Area</b> : 2345 m2</li>
+                      <li><b>Completed Date</b> : April 2019</li>
+                      <li><b>Architect</b> : Robert Kim</li>
+                    </ul>
+                    <div class="detail">
+                      <div><span>321</span> WORKING DAY</div>
+                      <div><span>420</span> MEMBERS</div>
+                      <div><span>8M</span> BUDGET</div>
+                    </div>
+                    <a href="" class="view-project"
+                      >VIEW PROJECT<i
+                        class="fa fa-arrow-right"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="project-photo">
+                    <img src="images/project-main-02-01.jpg" alt="" />
+                    <img src="images/project-main-02-02.jpg" alt="" />
+                    <img src="images/project-main-02-03.jpg" alt="" />
+                    <img src="images/project-main-02-04.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="tab">
+                  <div class="project-info" data-text="03">
+                    <h3>Project : Outside Stairs Architecture</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Cupiditate quo voluptate, officia maxime, necessitatibus
+                      deleniti adipisci, facere accusantium aut nemo, molestiae
+                      rem vitae. Quidem enim tempore sed iste quos
+                      exercitationem quod voluptatibus aliquam aperiam
+                      assumenda, necessitatibus consequuntur doloribus, culpa,
+                      possimus!
+                    </p>
+                    <ul>
+                      <li><b>Area</b> : 1200 m2</li>
+                      <li><b>Completed Date</b> : May 2020</li>
+                      <li><b>Architect</b> : Christine Jung</li>
+                    </ul>
+                    <div class="detail">
+                      <div><span>132</span> WORKING DAY</div>
+                      <div><span>202</span> MEMBERS</div>
+                      <div><span>5M</span> BUDGET</div>
+                    </div>
+                    <a href="" class="view-project"
+                      >VIEW PROJECT<i
+                        class="fa fa-arrow-right"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="project-photo">
+                    <img src="images/project-main-03-01.jpg" alt="" />
+                    <img src="images/project-main-03-02.jpg" alt="" />
+                    <img src="images/project-main-03-03.jpg" alt="" />
+                    <img src="images/project-main-03-04.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="btn">
+                <label for="tab1"></label>
+                <label for="tab2"></label>
+                <label for="tab3"></label>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -89,7 +212,118 @@
       <section class="cd-section" id="plan">
         <div>
           <div class="content">
-            <img src="images/temp-section-04.jpg" />
+            <div class="plan-inner">
+              <div class="plan-feature">
+                <div class="plan-info">
+                  <div class="plan-heading">
+                    <h2>
+                      Planning<br />
+                      For the Next Project
+                    </h2>
+                    <hr class="bar" />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quisquam temporibus error numquam animi quas architecto
+                      doloribus hic accusantium, officia accusamus fugiat quae
+                      rem reprehenderit repellat placeat vel, perspiciatis quia
+                      harum fugit eligendi nam. Fuga praesentium pariatur
+                      temporibus, natus, explicabo expedita quaerat magnam
+                      aliquid similique autem iure iste. Officiis repellat,
+                      repellendus.
+                    </p>
+                  </div>
+                  <div class="plan-photo">
+                    <img src="images/plan-main-01.jpg" />
+                  </div>
+                </div>
+                <div class="history-info">
+                  <h2>History</h2>
+                  <hr class="bar" />
+                  <div class="history-slider">
+                    <div>
+                      <h4>
+                        The Project <br />of Architect for the <span>2013</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quos eveniet modi totam ratione dolores
+                        accusantium sapiente cupiditate ipsum, non repudiandae!
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />of Architect for the <span>2014</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quos eveniet modi totam ratione dolores
+                        accusantium sapiente cupiditate ipsum, non repudiandae!
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />of Architect for the <span>2015</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quos eveniet modi totam ratione dolores
+                        accusantium sapiente cupiditate ipsum, non repudiandae!
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />of Architect for the <span>2016</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quos eveniet modi totam ratione dolores
+                        accusantium sapiente cupiditate ipsum, non repudiandae!
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />of Architect for the <span>2017</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quos eveniet modi totam ratione dolores
+                        accusantium sapiente cupiditate ipsum, non repudiandae!
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />of Architect for the <span>2018</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quos eveniet modi totam ratione dolores
+                        accusantium sapiente cupiditate ipsum, non repudiandae!
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />of Architect for the <span>2019</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quos eveniet modi totam ratione dolores
+                        accusantium sapiente cupiditate ipsum, non repudiandae!
+                      </p>
+                    </div>
+                    <div>
+                      <h4>
+                        The Project <br />of Architect for the <span>2020</span>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quos eveniet modi totam ratione dolores
+                        accusantium sapiente cupiditate ipsum, non repudiandae!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

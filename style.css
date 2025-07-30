@@ -156,6 +156,240 @@ header {
   overflow: hidden;
   font-size: 17px;
 }
+/* ############## Section : project  ##############*/
+.project-inner {
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.tabs {
+  /* border: 5px solid red; */
+  height: 100%;
+  width: 300%;
+  transition: 0.5s;
+}
+.tab {
+  height: 100%;
+  /* border: 5px solid yellow; */
+  float: left;
+  width: 33.333333%;
+}
+.tab > div {
+  /* border: 5px solid blue; */
+  height: 100%;
+  float: left;
+}
+.project-info {
+  width: 25%;
+}
+.project-photo {
+  width: 75%;
+  overflow: hidden;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.btn {
+  /* border: 2px solid #000; */
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  /* border: 1px solid #000; */
+  width: 25%;
+  text-align: center;
+}
+.btn label {
+  cursor: pointer;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 10px;
+  position: relative;
+}
+.btn label::before {
+  content: "";
+  display: inline-block;
+  /* background-color: #000; */
+  border: 1px solid transparent;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  transition: 0.3s;
+}
+.btn label:hover:before {
+  border: 1px solid #bbb;
+}
+input[id="tab1"]:checked ~ .btn label[for="tab1"]:before,
+input[id="tab2"]:checked ~ .btn label[for="tab2"]::before,
+input[id="tab3"]:checked ~ .btn label[for="tab3"]::before {
+  border: 1px solid #aaa;
+}
+
+input[id="tab1"]:checked ~ .tabs {
+  margin-left: 0;
+}
+input[id="tab2"]:checked ~ .tabs {
+  margin-left: -100%;
+}
+input[id="tab3"]:checked ~ .tabs {
+  margin-left: -200%;
+}
+/* ################# Section : Project info  ##################*/
+.project-info {
+  padding: 30px;
+  position: relative;
+}
+.project-info h3 {
+  font-size: 20px;
+}
+.project-info p {
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.project-info ul {
+  line-height: 2em;
+  margin: 3px 0;
+}
+.project-info ul li:before {
+  font-family: fontawesome;
+  content: "\f105";
+  margin-right: 5px;
+}
+.detail {
+  /* border: 1px solid #000; */
+  margin-bottom: 20px;
+}
+.detail div {
+  /* border: 1px solid #000; */
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  padding: 7px;
+  /* width: 30%; */
+}
+.detail div span {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.view-project {
+  background-color: #3f3f3f;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  display: inline-block;
+  width: 220px;
+  padding: 10px;
+  text-align: center;
+  /* 새로고침 했을때 생성되는시간 */
+  transition: 0.5s;
+}
+.view-project:hover{
+  background-color: #000;
+  /* 마우스를 갖다 됬을때 검은색으로 변하는시간 */
+  transition: 0.5s;
+}
+
+.view-project .fa{
+  margin-left: 10px;
+  /* 오른쪽 화살표가 해당값까지 이동하는 시간 */
+  transition: 0.5s;
+}
+.view-project:hover .fa{
+  margin-left: 30px;
+}
+.project-info::before{
+  content: attr(data-text);
+  color: #eeeeee82;
+  font-size: 130px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+
+}
+/* ################# Section : plan  ##################*/
+.plan-inner {
+  background-color: #1d1b24;
+  height: 100%;
+}
+.plan-feature {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plan-feature > div {
+  /* border: 1px solid #ff0000; */
+  height: 300px;
+  color: #bbb;
+}
+.plan-info {
+}
+.plan-info > div {
+  float: left;
+}
+.plan-heading {
+  width: 70%;
+  padding-right: 50px;
+}
+.plan-heading h2,
+.history-info h2 {
+  color: #fff;
+  margin: 0;
+}
+.plan-heading p {
+  font-size: 14px;
+  line-height: 1.6em;
+}
+.plan-photo {
+  width: 30%;
+}
+.plan-photo img {
+  height: 265px;
+}
+.plan-heading hr.bar,
+.history-info hr.bar {
+  background-color: dodgerblue;
+  display: inline-block;
+}
+.history-slider {
+  /* border: 1px solid red; */
+}
+.history-slider div {
+}
+.history-slider div h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+.history-slider div h4 span {
+  color: dodgerblue;
+}
+.history-slider div p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+/* Slick.js Custom CSS */
+.history-slider .slick-arrow {
+  /* 화살표 표시제거 */
+  display: none !important;
+}
+.history-slider .slick-dots li button:before {
+  color: #fff;
+  font-size: 40px;
+}
+.history-slider .slick-dots li {
+  margin: 0;
+}
 
 /* ################### Section : awards  ###################*/
 .awards-inner {

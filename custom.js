@@ -25,4 +25,24 @@ $(document).ready(function () {
       $("header, .gototop").removeClass("active");
     }
   });
+
+  //Slick.js :  history
+  $(".history-slider").slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+  });
+
+  //Slick.js :  Project photo
+  $(".project-photo").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplayspeed: 2000,
+    cssEase: "linear"
+  });
 });
