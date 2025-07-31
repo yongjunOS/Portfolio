@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
-
-/* FontAwesome CDN 4.7 */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /* Reset CSS */
@@ -106,6 +105,131 @@ header {
 .btn-hiring:active {
   transform: scale(0);
 }
+/* ################# Section : home  ##################*/
+.home-inner {
+  background-color: #fff;
+  height: 100%;
+}
+.home-inner::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: overlay 1s 2s ease-in-out both;
+  /* display: none; */
+}
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+  line-height: 1.2em;
+  margin: 0;
+  /* display: none; */
+  font-family: "Source Sans 3", sans-serif;
+  animation: slideup 2s linear;
+  animation-fill-mode: both;
+}
+.welcome-text span {
+  display: block;
+  font-size: 26px;
+}
+.welcome-text span .fa {
+  color: crimson;
+}
+.opacity-image {
+  background: url(images/section-bg-01.jpg) no-repeat center center;
+  height: 100%;
+  background-size: cover;
+  /* display: none; */
+  opacity: 0;
+  animation: opacity-image 1s 2.5s ease-in-out both;
+}
+.home-heading {
+  /* display: none; */
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 50%;
+  left: 250px;
+  transform: translateY(-50%);
+}
+.home-heading span {
+  display: block;
+  font-size: 115px;
+  color: #fff;
+  /* font-weight는 단위가 따로 없음*/
+  font-weight: 600;
+  /* border: 1px solid #000; */
+  width: 0;
+  overflow: hidden;
+  animation: reveal 1s 3s ease-in-out both;
+}
+.home-heading span:nth-child(1) {
+  animation-delay: 3s;
+}
+.home-heading span:nth-child(2) {
+  animation-delay: 3.2s;
+}
+.home-heading span:nth-child(3) {
+  animation-delay: 3.4s;
+}
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  20% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes overlay {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes opacity-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 /* ################### Section : about ###################*/
 .about-inner {
   background: url(images/line-drawing.png) no-repeat right bottom;
@@ -291,29 +415,29 @@ input[id="tab3"]:checked ~ .tabs {
   /* 새로고침 했을때 생성되는시간 */
   transition: 0.5s;
 }
-.view-project:hover{
+.view-project:hover {
   background-color: #000;
   /* 마우스를 갖다 됬을때 검은색으로 변하는시간 */
   transition: 0.5s;
 }
 
-.view-project .fa{
+.view-project .fa {
   margin-left: 10px;
   /* 오른쪽 화살표가 해당값까지 이동하는 시간 */
   transition: 0.5s;
 }
-.view-project:hover .fa{
+.view-project:hover .fa {
   margin-left: 30px;
 }
-.project-info::before{
+.project-info::before {
   content: attr(data-text);
   color: #eeeeee82;
   font-size: 130px;
   position: absolute;
   top: -10px;
   left: 10px;
-
 }
+
 /* ################# Section : plan  ##################*/
 .plan-inner {
   background-color: #1d1b24;
@@ -592,7 +716,8 @@ hr.bar {
 .send-box input[type="email"]:focus,
 .send-box input[type="text"]:focus,
 .send-box textarea:focus {
-  /* background-color: #efefef; */
+  /* 클릭했을때 칸 배경색 변경 */
+  /* background-color: #f1f1f1; */
 }
 /* input 요소들은 inline-block이기때문에 크기 설정가능하다 */
 /* html5부터 button태그가 만들어졌다. */
