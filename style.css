@@ -801,7 +801,7 @@ hr.bar {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   position: relative;
 }
 .hiring-heading span::before,
@@ -827,6 +827,7 @@ hr.bar {
 }
 .hiring-info {
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .hiring-info > div {
   /* border: 1px solid #ff0000; */
@@ -938,30 +939,83 @@ hr.bar {
   color: #fff;
 }
 
-.sns a:hover::before{
+.sns a:hover::before {
   transform: translate(-50%) scale(1);
 }
 
 .sns a:nth-child(1)::before {
-  background-color: #1877F2;
+  background-color: #1877f2;
 }
 
 .sns a:nth-child(2)::before {
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
 }
 
 .sns a:nth-child(3)::before {
-  background-color: #0A66C2;
+  background-color: #0a66c2;
 }
 
 .sns a:nth-child(4)::before {
-  background-color: #E4405F;
+  background-color: #e4405f;
 }
 
 .sns a:nth-child(5)::before {
-  background-color: #CD201F;
+  background-color: #cd201f;
 }
 
 .sns a:nth-child(6)::before {
-  background-color: #0099FF;
+  background-color: #0099ff;
+}
+/* ####################### SubPage : Hiring ####################  */
+.hiring-main.project-main1 {
+  background: url(images/project-main-01-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.hiring-main.project-main2 {
+  background: url(images/project-main-02-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hiring-main.project-main3 {
+  background: url(images/project-main-03-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.hiring-main.project-main1 .hiring-heading,
+.hiring-main.project-main2 .hiring-heading,
+.hiring-main.project-main3 .hiring-heading {
+  color: #fff;
+  width: 100%;
+  /* border: 1px solid red; */
+  animation: slidedown 1s linear both;
+}
+.hiring-main.project-main1 .hiring-heading h1,
+.hiring-main.project-main2 .hiring-heading h1,
+.hiring-main.project-main3 .hiring-heading h1 {
+  font-size: 70px;
+}
+
+.project-detail .hiring-slogan p::before {
+  left: -50px;
+}
+.photo.project-info {
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 50px;
+}
+.project-detail .hiring-heading span::before,
+.project-detail .hiring-heading span::after {
+  background-color: #fff;
+}
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
