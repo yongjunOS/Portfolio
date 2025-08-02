@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DesignWorks Architecture Agency</title>
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png" />
+    <!-- 모든 CSS 먼저 (렌더링 차단 방지) -->
     <script src="js/jquery-2.1.4.js"></script>
     <!-- Page Scroll Effects JS & CSS -->
     <script src="js/velocity/modernizr.js"></script>
@@ -18,9 +19,11 @@
     <script src="js/slick/slick.min.js"></script>
     <link rel="stylesheet" href="js/slick/slick-theme.css" />
     <link rel="stylesheet" href="js/slick/slick.css" />
+    <!-- Featherlight.js -->
+    <script src="js/featherlight/featherlight.js"></script>
+    <link rel="stylesheet" href="js/featherlight/featherlight.css" />
     <!-- Custom JS & CSS -->
     <script src="custom.js"></script>
-    <!-- 순서중요 pc버전의 css가 먼저오고 그 다음 모바일 버전의 css가 온다 -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
@@ -126,7 +129,10 @@
                       <div><span>320</span> MEMBERS</div>
                       <div><span>3M</span> BUDGET</div>
                     </div>
-                    <a href="" class="view-project"
+                    <a
+                      href="project-detail-01.html"
+                      data-featherlight="iframe"
+                      class="view-project"
                       >VIEW PROJECT<i
                         class="fa fa-arrow-right"
                         aria-hidden="true"
@@ -162,7 +168,10 @@
                       <div><span>420</span> MEMBERS</div>
                       <div><span>8M</span> BUDGET</div>
                     </div>
-                    <a href="" class="view-project"
+                    <a
+                      href="project-detail-02.html"
+                      data-featherlight="iframe"
+                      class="view-project"
                       >VIEW PROJECT<i
                         class="fa fa-arrow-right"
                         aria-hidden="true"
@@ -177,7 +186,11 @@
                   </div>
                 </div>
                 <div class="tab">
-                  <div class="project-info" data-text="03">
+                  <div
+                    class="project-info"
+                    data-featherlight="iframe"
+                    data-text="03"
+                  >
                     <h3>Project : Outside Stairs Architecture</h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -198,7 +211,10 @@
                       <div><span>202</span> MEMBERS</div>
                       <div><span>5M</span> BUDGET</div>
                     </div>
-                    <a href="" class="view-project"
+                    <a
+                      href="project-detail-03.html"
+                      data-featherlight="iframe"
+                      class="view-project"
                       >VIEW PROJECT<i
                         class="fa fa-arrow-right"
                         aria-hidden="true"
@@ -525,7 +541,9 @@
     <a href="#" class="gototop">
       <img src="images/gototop.png" />
     </a>
-    <a href="" class="btn-hiring"><i class="fa fa-commenting"></i>Hiring</a>
+    <a href="hiring.html" class="btn-hiring" data-featherlight="iframe">
+      <i class="fa fa-commenting"></i>Hiring
+    </a>
 
     <nav>
       <ul class="cd-vertical-nav">
