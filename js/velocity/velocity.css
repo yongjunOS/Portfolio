@@ -50,6 +50,8 @@ Main Components
 }
 
 .cd-section:first-of-type > div::before {
+  /* 에러메시지가 떠서 임의로 안보이게 설정 */
+  display: none;
   /* alert -> all scrolling effects are not visible on small devices */
   content: "Effects not visible on mobile!";
   position: absolute;

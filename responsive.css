@@ -190,4 +190,181 @@
     right: 20px;
     bottom: 20px;
   }
+  .cd-vertical-nav {
+    display: none;
+  }
+
+  /* Show Hide Section */
+  /* #home,
+  #about,
+  #project
+  #plan,
+  #awards,
+  #location,
+  #contact {
+    display: none;
+  } */
+
+  /* ################# Section : home  ##################*/
+
+  .home-inner {
+    height: 100vh;
+  }
+
+  .welcome-text {
+    transform: translate(-50%, -50%) scale(0.7);
+    width: 100%;
+    border: 1px solid #000;
+  }
+  .home-heading {
+    left: 20px;
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+  }
+  .home-heading span {
+    /* 폰트사이즈 수정하니깐 헤더바 보이기 시작했음 */
+    font-size: 50px;
+  }
+
+  /* ################### Section : about ###################*/
+  .about-inner {
+    height: auto;
+    padding: 20px;
+    background: #0dace3;
+  }
+
+  .about-items {
+    width: 100%;
+    position: static;
+    margin-left: 0;
+    transform: none;
+    text-align: center;
+  }
+
+  .item img {
+    float: none;
+  }
+  /* ############## Section : project  ##############*/
+
+  .project-inner {
+    height: auto;
+    border: none;
+  }
+  .tab > div {
+    float: none;
+    width: 100%;
+  }
+  .view-project {
+    /* border: 3px solid #000; */
+    width: 100%;
+  }
+  .project-info {
+    padding: 30px;
+    /* border: 3px solid #000; */
+  }
+  .project-info p {
+    /* border: 1px solid #000; */
+    position: relative;
+  }
+  .detail div {
+    font-size: 13px;
+  }
+  .btn {
+    /* border: 1px solid red; */
+    width: 100%;
+    bottom: -10px;
+  }
+  .project-info::before{
+    margin-top: 30px;
+    font-size: 100px;
+  }
+  /* ################# Section : plan  ##################*/
+  .plan-inner {
+    height: auto;
+    padding: 20px;
+  }
+  .plan-feature {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .plan-feature > div {
+    height: auto;
+  }
+
+  .plan-info > div {
+    float: none;
+    width: 100%;
+  }
+
+  .plan-info {
+    margin-bottom: 20px;
+  }
+
+  .plan-photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .plan-heading {
+    padding-right: 0;
+  }
+  /* ################### Section : awards  ###################*/
+
+  .awards-inner {
+    height: auto;
+  }
+
+  .awards-inner > div {
+    float: none;
+    width: 100%;
+    padding: 40px 20px;
+  }
+  .about-heading,
+  .victory-jump img {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+  .about-heading {
+    width: 100%;
+  }
+  .victory-jump {
+    text-align: center;
+  }
+
+  /* ################### Section : location  ###################*/
+  .location-inner {
+    height: auto;
+  }
+
+  .feature {
+    width: 100%;
+    /* static에서 realative로 한이유?  */
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .feature > div {
+    float: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* ################### Section : Contact  ###################*/
+  .contact-inner {
+    height: 100vh;
+  }
+  .contact-feature {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .contact-feature > div {
+    float: none;
+    width: 100%;
+  }
 }
