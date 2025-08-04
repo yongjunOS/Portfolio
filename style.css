@@ -882,6 +882,7 @@ hr.bar {
   position: relative;
 }
 .hiring-slogan p::before {
+  /* border: 1px solid #000; */
   font-family: "Overpass", sans-serif;
   content: ",,";
   font-size: 200px;
@@ -967,7 +968,7 @@ hr.bar {
 .sns a:nth-child(6)::before {
   background-color: #0099ff;
 }
-/* ####################### SubPage : Hiring ####################  */
+/* ####################### SubPage : Project ####################  */
 .hiring-main.project-main1 {
   background: url(images/project-main-01-01.jpg) no-repeat center center;
   background-size: cover;
