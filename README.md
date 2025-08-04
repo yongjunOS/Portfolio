@@ -22,7 +22,7 @@
 ├── images/                   # 이미지 에셋
 └── Source/
     └── Source-Text.txt       # 콘텐츠 참조 파일
-```
+``'
 
 ##  섹션별 구성
 
