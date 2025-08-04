@@ -19,9 +19,7 @@
 ├── hiring.html               # 채용 정보 모달
 ├── style.css                 # 메인 스타일시트
 ├── responsive.css            # 모바일 반응형 스타일
-├── images/                   # 이미지 에셋
-└── Source/
-    └── Source-Text.txt       # 콘텐츠 참조 파일
+├── images/                   # 이미지
 ```
 
 ##  섹션별 구성
