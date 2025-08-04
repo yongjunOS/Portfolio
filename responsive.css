@@ -1,31 +1,33 @@
 /* PC 화면에서만 적용되는 반응형 여백 조정 */
 
 /* 큰 PC 화면 (1920px 이상) */
-/*
+
 @media only screen and (min-width: 1920px) {
+  .gnb-inner {
+    margin-top: 10px;
+  }
   .content {
-    width: calc(100% - 200px);
+    width: calc(100% - 150px);
     height: calc(100% - 150px);
     left: 100px;
     bottom: 75px;
   }
-  
+
   .gnb-inner {
     width: calc(100% - 200px);
   }
-  
+
   .btn-hiring {
-    right: 100px;
-    bottom: 75px;
+    right: 63px;
+    bottom: 89px;
   }
 }
-*/
 
 /* 일반 PC 화면 (1400px - 1920px) */
-/*
+/* 
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
   .content {
-    width: calc(100% - 120px);
+    width: calc(100% - 150px);
     height: calc(100% - 100px);
     left: 60px;
     bottom: 50px;
@@ -39,12 +41,11 @@
     right: 60px;
     bottom: 50px;
   }
-}
-*/
+} */
 
 /* 중간 PC 화면 (1050px - 1399px) */
-/*
-@media only screen and (min-width: 1050px) and (max-width: 1399px) {
+
+/* @media only screen and (min-width: 1050px) and (max-width: 1399px) {
   .content {
     width: calc(100% - 80px);
     height: calc(100% - 80px);
@@ -60,8 +61,7 @@
     right: 40px;
     bottom: 40px;
   }
-}
-*/
+} */
 
 /* 768px 이하에서는 기존 스타일 유지 (모바일) */
 
@@ -103,6 +103,7 @@
     right: -270px;
     width: 250px;
     height: 100vh;
+    /* border: 4px solid #000; */
     box-shadow: -5px 0 10px #0000000e;
     transition: 0.5s;
   }
@@ -209,6 +210,7 @@
 
   .home-inner {
     height: 100vh;
+    /* border: 4px solid #000; */
   }
 
   .welcome-text {
@@ -273,7 +275,7 @@
   .btn {
     /* border: 1px solid red; */
     width: 100%;
-    bottom: -10px;
+    bottom: -5px;
   }
   .project-info::before {
     margin-top: 30px;
@@ -356,7 +358,8 @@
 
   /* ################### Section : Contact  ###################*/
   .contact-inner {
-    height: 100vh;
+    height: auto;
+    /* border: 4px solid #000; */
   }
   .contact-feature {
     width: 100%;
@@ -366,6 +369,7 @@
   .contact-feature > div {
     float: none;
     width: 100%;
+    /* border: 4px solid #000; */
   }
 
   /* ####################### SubPage : Hiring ####################  */
