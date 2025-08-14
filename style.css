@@ -846,10 +846,13 @@ hr.bar {
   left: 50%;
   /* 콤마 주의 */
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 80%;
+  /* border: 1px solid #000; */
 }
 .center-child h2 {
-  font-size: 36px;
+  /* border: 1px solid #000; */
+
+  font-size: 46px;
   font-weight: normal;
 }
 .center-child p {
@@ -999,13 +1002,20 @@ hr.bar {
   font-size: 70px;
 }
 
+.hiring-info img{
+  margin-top: 60px;
+  /* border: 2px solid #000; */
+}
+
 .project-detail .hiring-slogan p::before {
   left: -50px;
 }
 .photo.project-info {
-  font-size: 20px;
+  /* border: 1px solid #000; */
+  /* margin-top: 30px; */
+  font-size: 25px;
   font-weight: 300;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 .project-detail .hiring-heading span::before,
 .project-detail .hiring-heading span::after {
